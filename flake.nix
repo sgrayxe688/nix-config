@@ -1,5 +1,5 @@
 {
-  description = "Nix flake for NixOS on a laptop, desktop, server, and Macbook (NixDarwin)";
+  description = "Nix flake for macOS";
 
   inputs = {
     flake-schemas.url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/0.1.5.tar.gz";
@@ -26,11 +26,7 @@
       zig-overlay.overlays.default
     ];
     darwinConfigurations = {
-      port = import ./hosts/port { inherit inputs self; };
-    };
-    nixosConfigurations = {
-      # starboard = import ./hosts/starboard {inherit inputs self;};
-      # anchor    = import ./hosts/anchor    {inherit inputs self;};
+      macbook  = import ./hosts { inherit inputs self; };
     };
   };
 }

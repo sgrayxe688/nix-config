@@ -7,7 +7,7 @@
   configurationRevision = self.rev or self.dirtyRev or null;
   build.applications = pkgs.lib.mkForce (pkgs.buildEnv {
     name = "applications";
-    paths = config.environment.systemPackages ++ config.home-manager.users.bryce.home.packages;
+    paths = config.environment.systemPackages ++ config.home-manager.users.ethan.home.packages;
     pathsToLink = "/Applications";
   });
   defaults = {

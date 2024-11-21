@@ -13,21 +13,11 @@
   ];
   casks = [
     "docker"
-    "microsoft-teams"
-    "microsoft-outlook"
     "discord"
     "spotify"
-    "arc"
-    "visual-studio-code"
-    "balenaetcher"
-    "steam"
-    "fleet"
-    "yubico-authenticator"
-    "zen-browser"
-    "sizzy"
-    "protonvpn"
-    "launchcontrol"
-    "betterdisplay"
+    "sigmaos"
+    "whisky"
+    "goland"
   ];
   taps = [
     "homebrew/bundle"
@@ -35,6 +25,5 @@
     "FelixKratz/formulae"
     "osx-cross/avr"
     "osx-cross/arm"
-    "qmk/qmk"
   ];
 }

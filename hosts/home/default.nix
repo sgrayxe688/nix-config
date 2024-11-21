@@ -2,7 +2,7 @@
   home-manager = {
     useGlobalPkgs = true;
 
-    users.bryce = {
+    users.ethan = {
       imports = [
         ../../../modules/home/alacritty.nix
         ../../../modules/home/fish.nix
@@ -12,13 +12,13 @@
         ../../../modules/home/direnv.nix
       ];
       home = {
-        username = "bryce";
-        homeDirectory = "/Users/bryce";
+        username = "ethan";
+        homeDirectory = "/Users/ethan";
         stateVersion = "24.05";
         sessionPath = [
-          "/Users/bryce/.nix-profile/bin"
-          "/Users/bryce/.local/bin"
-          "/Users/bryce/go/bin"
+          "/Users/ethan/.nix-profile/bin"
+          "/Users/ethan/.local/bin"
+          "/Users/ethan/go/bin"
           "/run/current-system/sw/bin"
           "/opt/homebrew/bin"
           "/nix/var/nix/profiles/default/bin"

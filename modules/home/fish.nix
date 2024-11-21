@@ -6,19 +6,13 @@
 }: {
   enable = true;
   shellAliases = {
-    nixos-rebuild =
-      if darwin
-      then "darwin-rebuild"
-      else "pinix nixos-rebuild";
+    nixos-rebuild = "darwin-rebuild";
     ls = "lsd";
   };
   preferAbbrs = true;
   shellAbbrs = {
     cl = "clear";
-    rbs =
-      if darwin
-      then "darwin-rebuild switch --flake ~/nix#${host}"
-      else "nixos-rebuild switch --flake ~/nix#${host}";
+    rbs = "darwin-rebuild switch --flake ~/nix#${host}";
     cat = "bat";
     dots = "ls -ld .*";
     e = "hx";
