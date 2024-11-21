@@ -51,6 +51,10 @@
         "/Applications/Sigmaos.app"
         "/Applications/Whisky.app"
       ];
+      wvous-tl-corner = 1; 
+      wvous-tr-corner = 1; 
+      wvous-bl-corner = 1;
+      wvous-br-corner = 1; 
     };
     finder = {
       AppleShowAllExtensions = true;
@@ -59,6 +63,7 @@
       FXDefaultSearchScope = "SCcf"; # Search current directory first
       FXEnableExtensionChangeWarning = false; # Disable warning when changing file extension
       QuitMenuItem = true;
+      NewWindowTarget = "OS volume";
     };
     spaces.spans-displays = false;
   };
