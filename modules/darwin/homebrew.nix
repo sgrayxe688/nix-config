@@ -8,8 +8,6 @@
       start_service = true;
       restart_service = "changed";
     }
-    # "borders"
-    "qmk/qmk/qmk"
   ];
   casks = [
     "docker"

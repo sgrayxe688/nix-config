@@ -44,26 +44,6 @@
     };
     font = {
       # If the family is not specified, all will fall back to `font.normal`.
-      normal = {
-        # family = "TerminalVector";
-        # style = "Normal";
-        family = "MD IO Trial";
-        style = "Regular";
-        # family = "JetbrainsMono Nerd Font";
-        # style = "Regular";
-      };
-      # bold = {
-      #   family = "MD IO Trial";
-      #   style = "Bold";
-      # };
-      # italic = {
-      #   family = "MD IO Trial";
-      #   style = "Italic";
-      # };
-      # bold_italic = {
-      #   family = "MD IO Trial";
-      #   style = "Bold Italic";
-      # };
       size = 13.0; # Font size in points.
       offset = {
         x = 0;

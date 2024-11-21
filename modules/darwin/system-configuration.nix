@@ -11,7 +11,7 @@
     pathsToLink = "/Applications";
   });
   defaults = {
-    ".GlobalPreferences"."com.apple.mouse.scaling" = 4.0;
+    ".GlobalPreferences"."com.apple.mouse.scaling" = 2.0;
     NSGlobalDomain = {
       "com.apple.trackpad.scaling" = 2.0;
       AppleFontSmoothing = 0;
@@ -41,11 +41,16 @@
       show-recents = false;
       static-only = false;
       tilesize = 50;
-      # Hot corners
-      wvous-tl-corner = 10; # Top left: Put display to sleep.
-      wvous-tr-corner = 1; # Top right: Disabled.
-      wvous-bl-corner = 13; # Bottom left: Lock screen.
-      wvous-br-corner = 1; # Bottom right: Disabled.
+      persistent-apps = [
+        "/System/Applications/Launchpad.app"
+        "/System/Applications/Messages.app"
+        "/Applications/Discord.App"
+        "/System/Applications/Mail.app"
+        "/System/Applications/FaceTime.app"
+        "/Applications/Nix Apps/Alacritty.app"
+        "/Applications/Sigmaos.app"
+        "/Applications/Whisky.app"
+      ];
     };
     finder = {
       AppleShowAllExtensions = true;

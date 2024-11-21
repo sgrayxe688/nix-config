@@ -1,13 +1,9 @@
 {
   pkgs,
   user,
-  darwin ? false,
   ...
 }: let
-  homeDir =
-    if darwin
-    then "/Users/${user}"
-    else "/home/${user}";
+  homeDir = "/Users/${user}";
 in {
   stateVersion = "24.05";
   username = user;
@@ -18,23 +14,18 @@ in {
     MANPAGER = "sh -c 'col -bx | bat -l man -p'";
     IWD = "($PWD)";
   };
-  sessionPath =
-    (
-      if darwin
-      then ["/opt/homebrew/bin"]
-      else []
-    )
-    ++ [
-      "${homeDir}/.nix-profile/bin"
-      "${homeDir}/.local/bin"
-      "${homeDir}/bin"
-      "${homeDir}/go/bin"
-      "/run/current-system/sw/bin"
-      "/nix/var/nix/profiles/default/bin"
-      "/usr/bin"
-      "/bin"
-      "/usr/local/bin"
-      "/usr/sbin"
-      "/sbin"
-    ];
+  sessionPath = [
+    "/opt/homebrew/bin"
+    "${homeDir}/.nix-profile/bin"
+    "${homeDir}/.local/bin"
+    "${homeDir}/bin"
+    "${homeDir}/go/bin"
+    "/run/current-system/sw/bin"
+    "/nix/var/nix/profiles/default/bin"
+    "/usr/bin"
+    "/bin"
+    "/usr/local/bin"
+    "/usr/sbin"
+    "/sbin"
+  ];
 }
